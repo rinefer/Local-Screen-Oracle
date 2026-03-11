@@ -40,9 +40,9 @@ python local.py
 ```
 
 ### Technical Features
-Privacy: No data is sent to external servers; analysis is performed entirely within the local Ollama instance.
-Optimization: Screenshots are resized to 768x768 before processing to ensure high performance and lower latency.
-Customization: The tone of the AI responses can be adjusted via the system prompt in the analyze_speak function.
+* Privacy: No data is sent to external servers; analysis is performed entirely within the local Ollama instance.
+* Optimization: Screenshots are resized to 768x768 before processing to ensure high performance and lower latency.
+* Customization: The tone of the AI responses can be adjusted via the system prompt in the analyze_speak function.
 
 ### Project Workflow
 The following diagram describes the internal logic of the application:
