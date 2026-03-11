@@ -39,6 +39,15 @@ Run the main script using the following command:
 python local.py
 ```
 
+### Technical Features
+Privacy: No data is sent to external servers; analysis is performed entirely within the local Ollama instance.
+Optimization: Screenshots are resized to 768x768 before processing to ensure high performance and lower latency.
+Customization: The tone of the AI responses can be adjusted via the system prompt in the analyze_speak function.
+
+### Project Workflow
+The following diagram describes the internal logic of the application:
+
+```mermaid
 graph TD
     A[Screen Capture] --> B[Image Optimization]
     B --> C[Local AI Analysis]
@@ -46,4 +55,5 @@ graph TD
     D --> E[Voice Synthesis]
     E --> F[Wait 15 Seconds]
     F --> A
+```
 The program operates in an infinite loop with a 15-second interval. To stop the process, use the Ctrl+C shortcut.
